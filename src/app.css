@@ -1,0 +1,29 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #dee2e6;
+    background-color: #000;
+}
+
+.nav-link {
+    color: black;
+    font-size: bold;
+}
+
+/* Hiding scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+body {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.roundheightwidth{
+    height: 61px;
+    width: 61px;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #080808;
+}
