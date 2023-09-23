@@ -6,6 +6,7 @@ import Team from '../Pages/Team'
 import Me from '../Pages/Me'
 import Referral from '../Pages/Referral'
 import Details from '../Pages/Details'
+import ChangePassword from '../Pages/ChangePassword'
 
 
 const PrivateRoutes = () => {
@@ -17,6 +18,8 @@ const PrivateRoutes = () => {
       <Route path='/home' element={<Home />} />
       <Route path='/referral' element={<Referral />} />
       <Route path='/productdetails/:id' element={<Details />} />
+      <Route path='/changepassword' element={<ChangePassword title="Change Password"/>} />
+
     </Routes>
   )
 }

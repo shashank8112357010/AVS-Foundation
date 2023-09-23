@@ -132,13 +132,12 @@ const Me = () => {
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiSolidKey size={25} /></p>
-                            <p className='mx-3 mt-2'>Change Password</p>
+                            <p className='mx-3 mt-2'><Link className='text-dark text-decoration-none' to="/changepassword">Change Password</Link></p>
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiSolidKey size={25} /></p>
                             <p className='mx-3 mt-2'>Withdraw Password</p>
                         </div>
-
                         <button className='custom-btn-logOut my-5 text-center' onClick={logout} >Log out</button>
                     </div>
                 </div>

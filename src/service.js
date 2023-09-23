@@ -12,6 +12,10 @@ export const forgotPasswordUser = async (user) => {
     return publicRequest.post(`user/resetpassword`, user)
 }
 
+export const chnagepassword = async (user) => {
+    return publicRequest.post(`user/changepassword`, user)
+}
+
 
 
 // products ===>
