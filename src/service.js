@@ -27,6 +27,17 @@ export const getProducts = async () => {
 export const getProductsById = async (id) => {
     return publicRequest.get(`product/getproducts/${id}`)
 }
+export const getProductsByCategoryId = async (id) => {
+    return publicRequest.get(`product/getproductsbycategoryid/${id}`)
+}
+
+
+// category ====>
+
+export const getCategory = async (id) => {
+    return publicRequest.get(`category/getcategory`)
+}
+
 
 
 
