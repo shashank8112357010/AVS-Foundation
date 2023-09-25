@@ -10,6 +10,8 @@ import ChangePassword from '../Pages/ChangePassword'
 import Wallet from '../Pages/Wallet'
 import Transaction from '../Pages/Transaction'
 import Mybankaccount from '../Pages/Mybankaccount'
+import Myorder from '../Pages/Myorder'
+import Recharge from '../Pages/Recharge'
 
 
 const PrivateRoutes = () => {
@@ -25,7 +27,8 @@ const PrivateRoutes = () => {
       <Route path='/wallet' element={<Wallet title="Wallet"/>} />
       <Route path='/transaction' element={<Transaction title="Transaction"/>} />
       <Route path='/mybankaccount' element={<Mybankaccount title="Mybankaccount"/>} />
-
+      <Route path='/myorder' element={<Myorder title="Myorder"/>} />
+      <Route Path='/recharge' element={<Recharge title="Recharge"/>} />
 
 
     </Routes>

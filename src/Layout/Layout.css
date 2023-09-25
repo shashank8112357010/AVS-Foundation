@@ -203,20 +203,70 @@ footer {
 
 /* wallet css */
 
-.wallet-container{
-  margin-top:150px;
+.wallet-container {
+  margin-top: 150px;
 }
 
 /* wallet css */
 
 /* transaction css */
 
-.transactions-container{
-  margin-top:120px;
-  background-color:#fff2f2;
+.transactions-container {
+  margin-top: 120px;
+  background-color: #fff2f2;
 }
 
 /* transaction css */
+
+/* mybankaccount-container css */
+
+.mybankaccount-container {
+  margin-top: 120px;
+}
+
+.form-control {
+  border: 1px solid black !important;
+  border-radius: 0px !important;
+  padding: 10px 0px;
+}
+
+.form-control::placeholder {
+  color: #000 !important;
+}
+
+/* mybankaccount-container css */
+
+/* myorder css */
+
+.myorder-container {
+  margin-top: 150px;
+}
+
+.custom-get-btn {
+  border-radius: 10px;
+  padding: 15px 100px;
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.custom-get-btn:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+/* myorder css */
+
+/* recharge css */
+
+.recharge-container {
+  margin-top: 150px;
+}
+
+/* recharge css */
 
 /* me css */
 

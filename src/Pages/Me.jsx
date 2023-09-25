@@ -3,7 +3,7 @@ import { removeToken } from '../Common/token';
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { BsWallet2 } from "react-icons/bs";
-import { BiNotepad, BiSolidKey, BiUserCircle , BiTransferAlt ,BiMoneyWithdraw} from 'react-icons/bi';
+import { BiNotepad, BiSolidKey, BiUserCircle, BiTransferAlt, BiMoneyWithdraw } from 'react-icons/bi';
 import { AiOutlineTransaction } from 'react-icons/ai';
 import { CiHeadphones } from 'react-icons/ci';
 
@@ -69,7 +69,7 @@ const Me = () => {
                             <div>
 
                                 <span className='d-inline w-100 ' >
-                                    Recharge
+                                    <Link className='text-dark text-decoration-none' to="/recharge">Recharge</Link>
                                 </span>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const Me = () => {
                                 </span>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
@@ -124,7 +124,7 @@ const Me = () => {
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiNotepad size={25} /></p>
-                            <p className='mx-3 mt-2'>My Orders</p>
+                            <p className='mx-3 mt-2'><Link className='text-dark text-decoration-none' to="/myorder">My Orders</Link></p>
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiUserCircle size={25} /></p>
