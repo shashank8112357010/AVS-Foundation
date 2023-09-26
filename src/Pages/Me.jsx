@@ -68,7 +68,7 @@ const Me = () => {
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <AiOutlineTransaction size={29} color='white' className='mt-3' /></div>
                             <div>
 
-                                <span className='d-inline w-100 ' >
+                                <span className='d-inline w-100'>
                                     <Link className='text-dark text-decoration-none' to="/recharge">Recharge</Link>
                                 </span>
                             </div>
@@ -78,7 +78,7 @@ const Me = () => {
                             <div>
 
                                 <span className='d-inline w-100 ' >
-                                    Withdraw
+                                    <Link className='text-dark text-decoration-none' to="/withdraw">Withdraw</Link>
                                 </span>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const Me = () => {
                             <div>
 
                                 <span className='d-inline w-100 ' >
-                                    Transaction
+                                    <Link className='text-dark text-decoration-none' to="/transaction">Transaction</Link>
                                 </span>
                             </div>
                         </div>

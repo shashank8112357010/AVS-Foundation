@@ -12,6 +12,7 @@ import Transaction from '../Pages/Transaction'
 import Mybankaccount from '../Pages/Mybankaccount'
 import Myorder from '../Pages/Myorder'
 import Recharge from '../Pages/Recharge'
+import Withdraw from '../Pages/Withdraw'
 
 
 const PrivateRoutes = () => {
@@ -29,7 +30,7 @@ const PrivateRoutes = () => {
       <Route path='/mybankaccount' element={<Mybankaccount title="Mybankaccount"/>} />
       <Route path='/myorder' element={<Myorder title="Myorder"/>} />
       <Route Path='/recharge' element={<Recharge title="Recharge"/>} />
-
+      <Route path='/withdraw' element={<Withdraw title="Withdraw"/>} />
 
     </Routes>
   )
