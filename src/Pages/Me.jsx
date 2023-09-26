@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { removeToken } from '../Common/token';
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate , useLocation } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { BsWallet2 } from "react-icons/bs";
 import { BiNotepad, BiSolidKey, BiUserCircle , BiTransferAlt ,BiMoneyWithdraw} from 'react-icons/bi';
@@ -11,11 +11,19 @@ import { CiHeadphones } from 'react-icons/ci';
 
 const Me = () => {
     const navigate = useNavigate()
+    const location = useLocation()
     const logout = () => {
         removeToken();
         navigate('/login');
         toast.success("Log out successfully")
     }
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+      }, [location.pathname]);
     return (
         <>
             <section className='me-container mx-auto'>
@@ -136,7 +144,7 @@ const Me = () => {
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiSolidKey size={25} /></p>
-                            <p className='mx-3 mt-2'>Withdraw Password</p>
+                            <p className='mx-3 mt-2'><Link className='text-dark text-decoration-none' to="/withrawpassword">Withdraw Password</Link></p>
                         </div>
                         <button className='custom-btn-logOut my-5 text-center' onClick={logout} >Log out</button>
                     </div>

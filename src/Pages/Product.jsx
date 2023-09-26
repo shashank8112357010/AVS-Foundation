@@ -20,6 +20,7 @@ const Product = () => {
             console.log("err");
         })
     }
+    
     const fetchCategoryData = () => {
         getCategory().then((res) => {
             setToggle(res.data.results[0].name)
