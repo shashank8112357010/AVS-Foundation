@@ -33,7 +33,6 @@ const PrivateRoutes = () => {
       <Route path='/myorder' element={<Myorder title="Myorder"/>} />
       <Route path='/recharge' element={<Recharge title="Recharge"/>} />
       <Route path='/withdraw' element={<Withdraw title="Withdraw"/>} />
-
     </Routes>
   )
 }

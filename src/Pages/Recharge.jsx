@@ -40,6 +40,7 @@ const Recharge = () => {
             </section>
         </>
     )
+
 }
 
 export default Recharge
