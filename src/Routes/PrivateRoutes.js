@@ -31,7 +31,7 @@ const PrivateRoutes = () => {
       <Route path='/transaction' element={<Transaction title="Transaction"/>} />
       <Route path='/mybankaccount' element={<Mybankaccount title="Mybankaccount"/>} />
       <Route path='/myorder' element={<Myorder title="Myorder"/>} />
-      <Route Path='/recharge' element={<Recharge title="Recharge"/>} />
+      <Route path='/recharge' element={<Recharge title="Recharge"/>} />
       <Route path='/withdraw' element={<Withdraw title="Withdraw"/>} />
 
     </Routes>

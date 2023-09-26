@@ -8,7 +8,7 @@
 
 ul {
   list-style: none;
-  padding-left:0px !important;
+  padding-left: 0px !important;
 }
 
 /* header css */
@@ -157,6 +157,16 @@ footer {
   max-width: 1024px !important;
 }
 
+.custom-team-btn {
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
 /* team css */
 
 /* me css */
@@ -188,6 +198,7 @@ footer {
   border-radius: 10px;
   padding: 15px 80px;
   color: white;
+  margin: 0px 50px;
   background-color: black;
   border: 1px solid transparent;
   text-decoration: none;
@@ -271,11 +282,11 @@ footer {
 
 /* withdraw css */
 
-.withdraw-container{
-  margin-top:100px;
+.withdraw-container {
+  margin-top: 100px;
 }
 
-.custom-withdraw-btn{
+.custom-withdraw-btn {
   border-radius: 10px;
   padding: 15px 200px;
   color: white;
@@ -293,11 +304,104 @@ footer {
 
 /* withdraw css */
 
+/* recharge css */
+
+.recharge-container {
+  margin-top: 120px;
+}
+
+.custom-recharge-btn {
+  border-radius: 10px;
+  padding: 15px 50px;
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.custom-recharge-btn:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+}
+
+/* recharge css */
+
 /* me css */
+
+@media (max-width:1440px) {
+  .team-container {
+    margin-top: 150px !important;
+  }
+}
+
+@media (max-width:1024px) {
+  .team-container {
+    margin-top: 150px !important;
+  }
+}
+
+@media (max-width:768px) {
+  .team-container {
+    margin-top: 120px !important;
+  }
+
+  .custom-wallet-btn {
+    margin: 0px 25px;
+  }
+
+  .custom-withdraw-btn {
+    padding: 15px 130px;
+  }
+}
 
 @media (max-width:430px) {
   .footer-list {
     display: flex;
-    gap: 60px !important;
+    gap: 50px !important;
   }
+
+  .custom-team-btn {
+    padding: 15px 10px !important;
+  }
+
+  .team-container {
+    margin-top: 100px !important;
+  }
+
+  .custom-wallet-btn {
+    padding: 15px 50px;
+    margin-right: 20px;
+  }
+
+  .custom-withdraw-btn {
+    padding: 15px 140px;
+  }
+
+  .container {
+    --bs-gutter-x: 2.5rem !important;
+  }
+}
+
+@media (max-width:380px) {
+  .custom-team-btn {
+    padding: 10px 6px !important;
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 40px !important;
+  }
+
+  .custom-wallet-btn {
+    padding: 15px 30px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .custom-withdraw-btn {
+    padding: 15px 110px;
+  }
+
 }

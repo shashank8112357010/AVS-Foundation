@@ -8,13 +8,13 @@ const Transaction = () => {
                     <div className='row'>
                         <ul className="nav nav-pills mb-3 mt-3 d-flex justify-content-center" id="pills-tab" role="tablist">
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link active px-5 mx-4" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Other</button>
+                                <button className="nav-link active px-5 mx-4 my-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Other</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link px-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Recharge</button>
+                                <button className="nav-link px-5 my-2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Recharge</button>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <button className="nav-link px-5 mx-4" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Withdraw</button>
+                                <button className="nav-link px-5 mx-4 my-2" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Withdraw</button>
                             </li>
                         </ul>
                         <div className="tab-content mt-3 mb-3" id="pills-tabContent">

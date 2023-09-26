@@ -37,7 +37,7 @@ const Myorder = () => {
                                                 <li>15/09/2023</li>
                                             </ul>
                                         </div>
-                                        <div className='text-center mb-3'>
+                                        <div className='text-center mb-3 pt-3'>
                                             <a href="#" className='custom-get-btn'>Get</a>
                                         </div>
                                     </div>

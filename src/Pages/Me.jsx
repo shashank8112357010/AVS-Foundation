@@ -49,7 +49,7 @@ const Me = () => {
                                 </div>
                                 <div className='text-center'>
                                     <p className='text-light'>0</p>
-                                    <p className='text-light'>today's income</p>
+                                    <p className='text-light'>Today's income</p>
                                 </div>
                             </div>
 
@@ -72,7 +72,7 @@ const Me = () => {
             <section className='transaction-container'>
                 <div className='container'>
                     <div className='row justify-content-center my-3'>
-                        <div className="col-lg-3 col-md-6 col-12 text-center" >
+                        <div className="col-sm-3 text-center" >
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <AiOutlineTransaction size={29} color='white' className='mt-3' /></div>
                             <div>
 
@@ -81,7 +81,7 @@ const Me = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12 text-center">
+                        <div className="col-sm-3 text-center">
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <BiMoneyWithdraw size={29} color='white' className='mt-3' /></div>
                             <div>
 
@@ -90,7 +90,7 @@ const Me = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12 text-center">
+                        <div className="col-sm-3 text-center">
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <BiTransferAlt size={29} color='white' className='mt-3' /></div>
                             <div>
 
@@ -99,7 +99,7 @@ const Me = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12 text-center">
+                        <div className="col-sm-3 text-center">
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <CiHeadphones size={29} color='white' className='mt-3' /></div>
                             <div>
 

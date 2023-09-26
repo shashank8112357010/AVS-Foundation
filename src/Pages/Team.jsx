@@ -12,7 +12,7 @@ const Team = () => {
                     <div className="card bg-white">
                         <div className="card-body">
                             <div className="row justify-content-center">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 my-1">
                                     <div className="bg-dark d-flex align-items-center justify-content-around">
                                         <div className='text-center '>
                                             <BiGroup size={40} color='white' className='mt-2' />
@@ -24,7 +24,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 my-1">
                                     <div className="bg-dark d-flex align-items-center justify-content-around">
                                         <div className='text-center '>
                                             <BiGroup size={40} color='white' className='mt-2'  />
@@ -41,13 +41,13 @@ const Team = () => {
 
                             <ul class="nav nav-pills my-5 d-flex justify-content-center" id="pills-tab" role="tablist">
                                 <li class="nav-item w-25 text-center" role="presentation">
-                                    <button class={`nav-link ${tab === 'B' && 'active'} m-auto w-50`} id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" onClick={() => setTab('B')}>B 10%  (0)</button>
+                                    <button class={`nav-link ${tab === 'B' && 'active'} m-auto custom-team-btn`} id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" onClick={() => setTab('B')}>B 10%  (0)</button>
                                 </li>
                                 <li class="nav-item   w-25 text-center" role="presentation">
-                                    <button class={`nav-link ${tab === 'C' && 'active'} m-auto w-50`} id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onClick={() => setTab('C')}>C 5%-  (0)</button>
+                                    <button class={`nav-link ${tab === 'C' && 'active'} m-auto custom-team-btn`} id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onClick={() => setTab('C')}>C 5%-  (0)</button>
                                 </li>
                                 <li class="nav-item w-25 text-center" role="presentation">
-                                    <button class={`nav-link ${tab === 'D' && 'active'} m-auto w-50`} id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" onClick={() => setTab('D')}>D 2%- (0)</button>
+                                    <button class={`nav-link ${tab === 'D' && 'active'} m-auto custom-team-btn`} id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" onClick={() => setTab('D')}>D 2%- (0)</button>
                                 </li>
                             </ul>
 

@@ -36,8 +36,8 @@ const Wallet = ({ title }) => {
                             </div>
                         </div>
                         <div className='mt-5 d-flex justify-content-center align-items-center'>
-                            <a href="#" className='custom-wallet-btn mx-5'>Recharge</a>
-                            <a href="#" className='custom-wallet-btn'>Balance</a>
+                            <a href="#" className='custom-wallet-btn'>Recharge</a>
+                            <a href="#" className='custom-wallet-btn'>Withdraw</a>
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-5 cursor-pointer'>
                             <p className='mt-2 text-dark'><BsWallet2 size={25} /></p>
