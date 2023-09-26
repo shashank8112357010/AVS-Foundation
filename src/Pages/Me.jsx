@@ -3,7 +3,7 @@ import { removeToken } from '../Common/token';
 import { Link, useNavigate , useLocation } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { BsWallet2 } from "react-icons/bs";
-import { BiNotepad, BiSolidKey, BiUserCircle , BiTransferAlt ,BiMoneyWithdraw} from 'react-icons/bi';
+import { BiNotepad, BiSolidKey, BiUserCircle, BiTransferAlt, BiMoneyWithdraw } from 'react-icons/bi';
 import { AiOutlineTransaction } from 'react-icons/ai';
 import { CiHeadphones } from 'react-icons/ci';
 
@@ -76,8 +76,8 @@ const Me = () => {
                             <div className=' text-center mt-2 mx-5 border rounded-circle roundheightwidth d-inline-flex  justify-content-center bg-dark ' > <AiOutlineTransaction size={29} color='white' className='mt-3' /></div>
                             <div>
 
-                                <span className='d-inline w-100 ' >
-                                    Recharge
+                                <span className='d-inline w-100'>
+                                    <Link className='text-dark text-decoration-none' to="/recharge">Recharge</Link>
                                 </span>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const Me = () => {
                             <div>
 
                                 <span className='d-inline w-100 ' >
-                                    Withdraw
+                                    <Link className='text-dark text-decoration-none' to="/withdraw">Withdraw</Link>
                                 </span>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const Me = () => {
                             <div>
 
                                 <span className='d-inline w-100 ' >
-                                    Transaction
+                                    <Link className='text-dark text-decoration-none' to="/transaction">Transaction</Link>
                                 </span>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ const Me = () => {
                                 </span>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
@@ -128,11 +128,11 @@ const Me = () => {
                         } */}
                         <div className='col-12 border border-1 border-dark d-flex mt-3 cursor-pointer'>
                             <p className='mt-2 text-dark'><BsWallet2 size={25} /></p>
-                            <p className='mx-3 mt-2'>Wallet</p>
+                            <p className='mx-3 mt-2'><Link className='text-dark text-decoration-none' to="/wallet">Wallet</Link></p>
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiNotepad size={25} /></p>
-                            <p className='mx-3 mt-2'>My Orders</p>
+                            <p className='mx-3 mt-2'><Link className='text-dark text-decoration-none' to="/myorder">My Orders</Link></p>
                         </div>
                         <div className='col-12 border border-1 border-dark d-flex mt-3'>
                             <p className='mt-2 text-dark'><BiUserCircle size={25} /></p>
