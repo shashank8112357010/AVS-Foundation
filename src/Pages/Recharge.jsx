@@ -3,7 +3,7 @@ import React from 'react'
 const Recharge = () => {
     return (
         <>
-            <h1 className='mt-5'>hello world</h1>
+            <h1 className='mt-5'>Hello world</h1>
         </>
   )
 }
