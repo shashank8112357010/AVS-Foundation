@@ -35,7 +35,7 @@ function App() {
 
   const gotoLogin = () => {
     return <Routes >
-      <Route exact path="/login" element={<Login title="Andar" />} />
+      <Route exact path="/login" element={<Login title="Login" />} />
       <Route exact path="/register/:token" element={<Register title="Register" />} />
       <Route exact path="/forgotpassword" element={<ForgotPassword title="Reset password" />} />
     </Routes>
