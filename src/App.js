@@ -18,13 +18,13 @@ function App() {
   useEffect(() => {
     // checking while component is being mounted weather it is auth check or not
     if (location.pathname.split('/')[1] === 'register') {
-   
       navigate(`/register/${location.pathname.split('/')[2]}`);
     }
     else if (location.pathname === "" || location.pathname === "/") {
       navigate("/login");
     }
     else if (!getToken()) {
+      console.log(getToken());
       navigate("/login");
     }
     // console.log(getToken());
@@ -35,7 +35,7 @@ function App() {
 
   const gotoLogin = () => {
     return <Routes >
-      <Route exact path="/login" element={<Login title="Login" />} />
+      <Route exact path="/login" element={<Login title="Andar" />} />
       <Route exact path="/register/:token" element={<Register title="Register" />} />
       <Route exact path="/forgotpassword" element={<ForgotPassword title="Reset password" />} />
     </Routes>
@@ -43,14 +43,14 @@ function App() {
   return (
     <Fragment>
       {
-       location.pathname === "" ||
+        location.pathname === "" ||
           location.pathname === "/login" ||
           location.pathname === "/forgotpassword" ||
           location.pathname === "/" ||
           location.pathname === `/register/${location.pathname.split('/')[2]}`
           ? (
-          gotoLogin()
-        ) :
+            gotoLogin()
+          ) :
           <Dashboard />
         // 'dd'
       }
