@@ -8,14 +8,17 @@ import Layout from './Layout/Layout';
 import Dashboard from './Layout/Dashboard';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import { getToken } from './Common/token';
+import { toast } from 'react-toastify';
 function App() {
   const location = useLocation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // const {token}  = useParams()
 
 
 
   useEffect(() => {
+    // toast.success(location.pathname)
+    // console.log(location.pathname.split(''));
     // checking while component is being mounted weather it is auth check or not
     if (location.pathname.split('/')[1] === 'register') {
       navigate(`/register/${location.pathname.split('/')[2]}`);
@@ -24,10 +27,9 @@ function App() {
       navigate("/login");
     }
     else if (!getToken()) {
-      console.log(getToken());
       navigate("/login");
     }
-    // console.log(getToken());
+    console.log(getToken());
   }, []);
 
 

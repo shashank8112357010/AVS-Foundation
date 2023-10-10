@@ -1,8 +1,12 @@
 import axios from "axios";
 
 
-const BASE_URL = "https://avsfoundation.onrender.com/api";
+const BASE_URL = "http://localhost:8000/api";
 
+
+
+
+ 
 //const TOKEN = localStorage?.getItem("persist:root") && JSON.parse(JSON.parse(localStorage?.getItem("persist:root"))?.currentUser)?.accessToken;
 //in above line i have used optionl chaining and it makes code hard to read so i made a simpler function
 
